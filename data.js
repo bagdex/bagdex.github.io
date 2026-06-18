@@ -46,9 +46,7 @@ const BOLAO = {
       // Preencha aqui os resultados REAIS após cada jogo:
       // Formato: "Time A x Time B": "golsAxgolsB"
       results: {
-        // "República Tcheca x África do Sul": "1x0",
-        // "Suíça x Bósnia": "2x1",
-        // ... (descomente e preencha conforme os jogos forem acontecendo)
+        "Suíça x Bósnia": "4x1",
       }
     }
 
