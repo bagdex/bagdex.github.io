@@ -46,7 +46,7 @@ const BOLAO = {
       // Preencha aqui os resultados REAIS após cada jogo:
       // Formato: "Time A x Time B": "golsAxgolsB"
       results: {
-        "República Tcheca x África do Sul": "5x5",
+        "República Tcheca x África do Sul": "1x1",
         "Suíça x Bósnia": "4x1",
       }
     }
@@ -474,7 +474,7 @@ const BOLAO = {
     {
         "name": "Luis Cortez Tipster da Lagoa Grande",
         "predictions": [
-            "1x1",
+            "0x1",
             "2x0",
             "0x0",
             "2x1",
