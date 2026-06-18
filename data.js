@@ -8,7 +8,7 @@ const BOLAO = {
   // ── Identidade ──────────────────────────────────────────
   name: "Legendários do Álcool",
   subtitle: "Copa do Mundo 2026",
-  adminPin: "1234",   // ← Mude este PIN antes de publicar!
+  adminPin: "8514",   // ← Mude este PIN antes de publicar!
 
   // ── Rodadas ─────────────────────────────────────────────
   rounds: [
