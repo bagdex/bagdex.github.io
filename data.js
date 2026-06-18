@@ -48,28 +48,6 @@ const BOLAO = {
       results: {
         "República Tcheca x África do Sul": "-",
         "Suíça x Bósnia": "4x1",
-        "Canadá x Catar",
-        "México x Coreia do Sul",
-        "Estados Unidos x Austrália",
-        "Escócia x Marrocos",
-        "Brasil x Haiti",
-        "Turquia x Paraguai",
-        "Holanda x Suécia",
-        "Alemanha x Costa do Marfim",
-        "Equador x Curaçao",
-        "Tunísia x Japão",
-        "Espanha x Arábia Saudita",
-        "Bélgica x Irã",
-        "Uruguai x Cabo Verde",
-        "Nova Zelândia x Egito",
-        "Argentina x Áustria",
-        "França x Iraque",
-        "Noruega x Senegal",
-        "Jordânia x Argélia",
-        "Portugal x Uzbequistão",
-        "Inglaterra x Gana",
-        "Panamá x Croácia",
-        "Colômbia x RD Congo
       }
     }
 
