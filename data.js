@@ -8,7 +8,7 @@ const BOLAO = {
   // ── Identidade ──────────────────────────────────────────
   name: "Legendários do Álcool",
   subtitle: "Copa do Mundo 2026",
-  adminPin: "1234",   // ← Mude este PIN antes de publicar!
+  adminPin: "8514",   // ← Mude este PIN antes de publicar!
 
   // ── Rodadas ─────────────────────────────────────────────
   rounds: [
@@ -46,9 +46,30 @@ const BOLAO = {
       // Preencha aqui os resultados REAIS após cada jogo:
       // Formato: "Time A x Time B": "golsAxgolsB"
       results: {
-        // "República Tcheca x África do Sul": "1x0",
-        // "Suíça x Bósnia": "2x1",
-        // ... (descomente e preencha conforme os jogos forem acontecendo)
+        "República Tcheca x África do Sul": "-",
+        "Suíça x Bósnia": "4x1",
+        "Canadá x Catar",
+        "México x Coreia do Sul",
+        "Estados Unidos x Austrália",
+        "Escócia x Marrocos",
+        "Brasil x Haiti",
+        "Turquia x Paraguai",
+        "Holanda x Suécia",
+        "Alemanha x Costa do Marfim",
+        "Equador x Curaçao",
+        "Tunísia x Japão",
+        "Espanha x Arábia Saudita",
+        "Bélgica x Irã",
+        "Uruguai x Cabo Verde",
+        "Nova Zelândia x Egito",
+        "Argentina x Áustria",
+        "França x Iraque",
+        "Noruega x Senegal",
+        "Jordânia x Argélia",
+        "Portugal x Uzbequistão",
+        "Inglaterra x Gana",
+        "Panamá x Croácia",
+        "Colômbia x RD Congo
       }
     }
 
