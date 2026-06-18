@@ -474,7 +474,7 @@ const BOLAO = {
     {
         "name": "Luis Cortez Tipster da Lagoa Grande",
         "predictions": [
-            "0x1",
+            "0x0",
             "2x0",
             "0x0",
             "2x1",
