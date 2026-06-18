@@ -257,47 +257,6 @@ tbody tr.result-row td.pts-td { background: transparent; color: var(--gold2); }
 .bet-score-wrap { display: flex; align-items: center; gap: 6px; }
 .hit-star { color: var(--gold); font-size: 12px; }
 
-/* ── ADMIN PANEL ── */
-.admin-gate { max-width: 380px; margin: 40px auto; text-align: center; }
-.admin-gate h2 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--brown); margin-bottom: 16px; letter-spacing: 2px; }
-.pin-wrap { display: flex; gap: 10px; justify-content: center; margin-bottom: 16px; }
-.pin-input {
-  width: 56px; height: 64px; text-align: center;
-  font-size: 28px; font-weight: 900; font-family: 'Bebas Neue', sans-serif;
-  border: 2px solid var(--border2); border-radius: 10px;
-  background: white; color: var(--brown);
-  outline: none; transition: border-color .2s;
-}
-.pin-input:focus { border-color: var(--orange); }
-.pin-error { color: var(--away); font-size: 13px; font-weight: 700; display: none; }
-.admin-panel { }
-.round-selector { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
-.round-btn {
-  padding: 8px 18px; border: 2px solid var(--border2); border-radius: 8px;
-  background: white; color: var(--brown); font-weight: 800; font-size: 13px;
-  cursor: pointer; transition: all .2s;
-}
-.round-btn:hover, .round-btn.active { background: var(--brown); color: white; border-color: var(--brown); }
-.results-form { display: flex; flex-direction: column; gap: 0; border: 1.5px solid var(--border2); border-radius: 10px; overflow: hidden; }
-.result-row {
-  display: flex; align-items: center; gap: 0;
-  border-bottom: 1px solid var(--border); background: white;
-}
-.result-row:last-child { border-bottom: none; }
-.result-row:nth-child(even) { background: var(--cream2); }
-.result-match { flex: 1; padding: 10px 14px; font-size: 12px; font-weight: 700; color: var(--brown); }
-.result-input-wrap { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-left: 1.5px solid var(--border); }
-.result-input {
-  width: 72px; text-align: center;
-  font-size: 14px; font-weight: 800; font-family: 'Nunito', sans-serif;
-  border: 1.5px solid var(--border2); border-radius: 6px;
-  padding: 5px 6px; background: white; color: var(--text);
-  outline: none; transition: border-color .2s;
-}
-.result-input:focus { border-color: var(--orange); }
-.result-input.filled { border-color: var(--home); background: var(--home-bg); color: var(--home); }
-.admin-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
-
 /* ── BUTTONS ── */
 .btn {
   padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;
@@ -405,52 +364,6 @@ tbody tr.result-row td.pts-td { background: transparent; color: var(--gold2); }
     <div id="rodadasContent"></div>
   </div>
 
-  <!-- ── ADMIN ── -->
-  <div id="tab-admin" class="tab-panel">
-    <div id="adminGate" class="admin-gate">
-      <h2>🔐 Área Admin</h2>
-      <p style="color:var(--muted);font-size:13px;margin-bottom:20px;">Digite o PIN para inserir os resultados dos jogos.</p>
-      <div class="pin-wrap">
-        <input class="pin-input" maxlength="1" type="password" inputmode="numeric" id="p0">
-        <input class="pin-input" maxlength="1" type="password" inputmode="numeric" id="p1">
-        <input class="pin-input" maxlength="1" type="password" inputmode="numeric" id="p2">
-        <input class="pin-input" maxlength="1" type="password" inputmode="numeric" id="p3">
-      </div>
-      <div class="pin-error" id="pinError">PIN incorreto. Tente novamente.</div>
-      <button class="btn btn-primary" onclick="checkPin()">Entrar</button>
-    </div>
-
-    <div id="adminPanel" class="admin-panel" style="display:none">
-      <div class="section-title">⚙️ Inserir Resultados</div>
-      <p style="color:var(--muted);font-size:13px;margin-bottom:16px;">
-        Preencha os placares reais dos jogos. Formato: <strong>2x1</strong>, <strong>0x0</strong>, etc.
-        Os pontos são calculados automaticamente.
-      </p>
-      <div class="round-selector" id="adminRoundSel"></div>
-      <div id="resultsForm" class="results-form"></div>
-      <div class="admin-actions">
-        <button class="btn btn-gold" onclick="saveResults()">💾 Salvar Resultados</button>
-        <button class="btn btn-primary btn-sm" onclick="toggleExport()">📋 Exportar data.js</button>
-        <button class="btn btn-danger btn-sm" onclick="clearResults()">🗑️ Limpar Rodada</button>
-        <button class="btn btn-sm" onclick="logout()" style="background:var(--cream3);color:var(--brown)">Sair</button>
-      </div>
-      <div class="export-box" id="exportBox">
-        <h4>📋 Bloco `results` para colar no data.js</h4>
-        <pre id="exportPre"></pre>
-        <button class="btn btn-sm btn-gold" onclick="copyExport()" style="margin-top:8px">Copiar</button>
-        <p class="export-note">
-          Copie o bloco acima e substitua o objeto <code>results: {}</code> da rodada correspondente em <strong>data.js</strong>,
-          depois faça commit e push para o GitHub Pages ter os dados permanentes.
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script src="data.js"></script>
 <script>
 // ────────────────────────────────────────────────────────────
 //  LEGENDÁRIOS DO BOLÃO — App Logic
