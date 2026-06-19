@@ -8,7 +8,19 @@ const BOLAO = {
   // ── Identidade ──────────────────────────────────────────
   name: "Legendários do Álcool",
   subtitle: "Copa do Mundo 2026",
-  adminPin: "8514",   // ← Mude este PIN antes de publicar!
+
+  // ── Google Sheets (fonte de resultados) ──────────────────
+  // 1. Crie uma planilha no Google Sheets com esta estrutura:
+  //    Aba chamada "Resultados" | Colunas: Rodada | Jogo | Resultado
+  //    Ex: rodada2 | Brasil x Haiti | 4x0
+  // 2. Compartilhe: "Qualquer pessoa com o link pode visualizar"
+  // 3. Copie o ID da URL: docs.google.com/spreadsheets/d/SEU_ID/edit
+  // 4. Cole abaixo:
+  googleSheet: {
+    sheetId: "SEU_SHEET_ID_AQUI",   // ← substituir pelo ID real
+    tabName: "Resultados",
+    autoRefreshMinutes: 5            // atualiza automaticamente a cada 5 min
+  },
 
   // ── Rodadas ─────────────────────────────────────────────
   rounds: [
@@ -46,8 +58,9 @@ const BOLAO = {
       // Preencha aqui os resultados REAIS após cada jogo:
       // Formato: "Time A x Time B": "golsAxgolsB"
       results: {
-        "República Tcheca x África do Sul": "1x1",
-        "Suíça x Bósnia": "4x1",
+        // "República Tcheca x África do Sul": "1x0",
+        // "Suíça x Bósnia": "2x1",
+        // ... (descomente e preencha conforme os jogos forem acontecendo)
       }
     }
 
@@ -474,7 +487,7 @@ const BOLAO = {
     {
         "name": "Luis Cortez Tipster da Lagoa Grande",
         "predictions": [
-            "0x0",
+            "1x1",
             "2x0",
             "0x0",
             "2x1",
