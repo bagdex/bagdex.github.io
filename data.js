@@ -17,9 +17,9 @@ const BOLAO = {
   // 3. Copie o ID da URL: docs.google.com/spreadsheets/d/SEU_ID/edit
   // 4. Cole abaixo:
   googleSheet: {
-    sheetId: "SEU_SHEET_ID_AQUI",   // ← substituir pelo ID real
+    sheetId: "1mk2HGsAStjhKVWoQncV2kjqRDz_OZWmi_1XszcrWlB4",   // ← substituir pelo ID real
     tabName: "Resultados",
-    autoRefreshMinutes: 5            // atualiza automaticamente a cada 5 min
+    autoRefreshMinutes: 10            // atualiza automaticamente a cada 5 min
   },
 
   // ── Rodadas ─────────────────────────────────────────────
