@@ -19,7 +19,7 @@ const BOLAO = {
   googleSheet: {
     sheetId: "1mk2HGsAStjhKVWoQncV2kjqRDz_OZWmi_1XszcrWlB4",   // ← substituir pelo ID real
     tabName: "Resultados",
-    autoRefreshMinutes: 10            // atualiza automaticamente a cada 5 min
+    autoRefreshMinutes: 5            // atualiza automaticamente a cada 5 min
   },
 
   // ── Rodadas ─────────────────────────────────────────────
